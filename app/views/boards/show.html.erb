@@ -2,7 +2,8 @@
   <div class="ml-auto boards__linkBox">
     <%= link_to '一覧', boards_path, class: 'btn btn-outline-dark' %>
     <%# <a href="/boards" class="btn btn-outline-dark">一覧</a> %>
-    <a href="/boards" class="btn btn-outline-dark">編集</a>
+    <%# <a href="/boards" class="btn btn-outline-dark">編集</a> %>
+    <%= link_to '編集', edit_board_path(@board), class: 'btn btn-outline-dark' %>
   </div>
 </div>
 
