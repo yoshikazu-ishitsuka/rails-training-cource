@@ -7,4 +7,8 @@
   </div>
 </div>
 
+<% if flash[:notice] %>
+  <div class="alert alert-primary"><%= flash[:notice] %></div>
+<% end %>
+
 <%= render partial: "board", object: @board %>
