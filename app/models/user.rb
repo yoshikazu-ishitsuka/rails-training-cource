@@ -3,6 +3,7 @@
 # Table name: users
 #
 #  id              :integer          not null, primary key
+#  birthday        :date
 #  name            :string(255)      not null
 #  password_digest :string(255)      not null
 #  created_at      :datetime         not null
@@ -25,4 +26,8 @@ class User < ApplicationRecord
     }
   validates :password,
     length: { minimum: 8 }
+
+    def age
+      0
+    end
 end
